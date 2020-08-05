@@ -1,0 +1,186 @@
+<!-- Main file of the News web -->
+
+<!-- General code for creating an html document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- I import here the styles of my page, the css created by me and 
+  the bootstrap which I downloaded on the Internet -->
+  <link rel="stylesheet" href=".\bootstrap\css\bootstrap.min.css">
+  <link rel="stylesheet" href=".\styles\site.css">
+  <meta name="author" content="Paula Jiménez Tejera" >
+  <title>News_site</title>
+</head>
+<body>
+<!-- Here I create the navbar which appears in all the pages of my project, using classes of bootstrap -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- The code for my logo image and the size that it has to be -->
+      <a class="navbar-brand" data-page="home" href="#">
+        <img src="./images/0.png" width="40" height="40" class="d-inline-block align-top" alt="">
+          News
+      </a>        
+      <!-- Here I have all the links to the different pages of my web -->
+      <ul class="navbar-nav mr-auto justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" data-page="world" href="">World</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-page="politics" href="">Politics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-page="entertainment" href="">Entertainment</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-page="sports" href="">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-page="technology" href="">Technology</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-page="science" href="">Science</a>
+        </li>
+      </ul>
+      <!-- And here is the code of the searcher which I haven't programmed to really search for things -->
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-danger" type="submit">Search</button>
+      </form>
+    </nav>
+  </header>
+  <!-- In the container I have reserved the space for the pages in my web -->
+  <main class="container">
+    <!-- This is the section for the home page -->
+    <section class="page home-page">
+      <!-- Adding a carousel and the spaces for the images -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+        </ul>
+        <!-- Here I add an image to each sheet in the carousel and a link 
+        in the image to can access the different pages they represent  -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="" class="nav-link" data-page="world">
+              <img src="./images/1.jpg" width="1100" height="450">
+            </a> 
+            <div class="carousel-caption">
+              <p class="title">World</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <a href="" class="nav-link" data-page="politics">
+              <img src="./images/2.jpg" width="1100" height="450">
+            </a>
+            <div class="carousel-caption">
+              <p class="title">Politics</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <a href="" class="nav-link" data-page="entertainment">
+              <img src="./images/3.jpg" width="1100" height="450">
+            </a> 
+            <div class="carousel-caption">
+              <p class="title">Entertainment</p> 
+            </div>  
+          </div>
+          <div class="carousel-item">
+            <a href="" class="nav-link" data-page="sports">
+              <img src="./images/4.jpg" width="1100" height="450">
+            </a> 
+            <div class="carousel-caption">
+              <p class="title">Sports</p>
+            </div> 
+          </div> 
+          <div class="carousel-item">
+            <a href="" class="nav-link" data-page="science">
+              <img src="./images/5.jpg" width="1100" height="450">
+            </a>
+            <div class="carousel-caption">
+              <p class="title">Science</p>
+            </div>
+          </div>  
+          <div class="carousel-item">
+            <a href="" class="nav-link" data-page="technology">
+              <img src="./images/6.jpg" width="1100" height="450">
+            </a> 
+            <div class="carousel-caption">
+              <p class="title">Technology</p> 
+            </div> 
+          </div> 
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>  
+      <!-- In the popular section of the home, I will add the most popular news-->
+      <section class="popular-page"></section>
+    </section>
+    <!-- Here I have all the sections for the specific content of each page -->
+    <section class="page world-page"></section>
+    <section class="page politics-page"> </section>
+    <section class="page entertainment-page"></section>
+    <section class="page sports-page"></section>
+    <section class="page technology-page"></section>
+    <section class="page science-page"></section>
+  </main>
+  <!-- Adding the footer which is also common for all the pages -->
+  <footer class="site-footer"><hr>
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- Here I am adding the links to can access the individual pages at the bottom of each one-->
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="">Home</a>
+              </li> 
+              <li class="list-inline-item">
+                <a href="" class="nav-link" data-page="world">World</a>
+              </li>  
+              <li class="list-inline-item">
+                <a href="" class="nav-link" data-page="politics">Politics</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="" class="nav-link" data-page="entertainment">Entertainment</a>
+              </li>  
+              <li class="list-inline-item">
+                <a href="" class="nav-link" data-page="sports">Sports</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="" class="nav-link" data-page="technology">Technology</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="" class="nav-link" data-page="science">Science</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- Finally, I add the scripts with the js code with the jquery language,
+    the bootstrap js document and the documentation of the different pages of my web  -->
+  <script src=".\scripts\jquery-3.3.1.min.js" charset="utf-8"></script>
+  <script src=".\bootstrap\js\bootstrap.min.js"></script>
+  <script src=".\scripts\index.js" charset="utf-8"></script>
+  <script src=".\scripts\home.js" charset="utf-8"></script>
+  <script src=".\scripts\world.js" charset="utf-8"></script>
+  <script src=".\scripts\politics.js" charset="utf-8"></script>
+  <script src=".\scripts\entertainment.js" charset="utf-8"></script>
+  <script src=".\scripts\sports.js" charset="utf-8"></script>
+  <script src=".\scripts\technology.js" charset="utf-8"></script>
+  <script src=".\scripts\science.js" charset="utf-8"></script>
+</body>
+</html>

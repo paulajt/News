@@ -1,0 +1,45 @@
+/*File with the styles in css that I have created or modified from the bootstrap*/
+
+
+/* ------Navbar style------ */
+.header .navbar {
+    background-color: rgb(255, 146, 146) !important;
+}
+
+.header .navbar-brand, .header .nav-item .nav-link {
+    color: white;
+}
+
+.header .navbar-brand:hover, .header .nav-item .nav-link:hover {
+    color: rgb(163, 15, 27);
+}
+
+
+/* ------Style of words in the carousel------ */
+.title{
+    color: rgb(0, 0, 0);
+} 
+
+
+/* ------Footer style------ */
+.site-footer {
+    background-color:  rgb(255, 146, 146);
+    padding: 0;
+    text-align: center;
+}
+
+.site-footer .bottom {
+    background-color:rgb(255, 146, 146);
+    padding: 20px 0;
+}
+  
+.site-footer .bottom .list-inline a {
+    color: #fff;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    margin-right: 15px;
+}
+  
+.site-footer .bottom .list-inline a:hover {
+    color: rgb(163, 15, 27);
+}
+  
